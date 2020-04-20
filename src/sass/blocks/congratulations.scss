@@ -1,0 +1,95 @@
+.congratulations {
+  padding-top: 104px;
+  padding-bottom: 154px;
+  background-color: $main-color-light;
+}
+
+.congratulations__heading {
+  margin-bottom: 85px;
+  text-align: center;
+}
+
+.congratulations__images {
+  @include dflex(nowrap, row, flex-start, flex-start);
+  min-width: 100%;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.congratulations__image-link {
+  flex-basis: 25%;
+  display: block;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.congratulations__image {
+  width: 100%;
+}
+
+@media (max-width: $lg) {
+  .congratulations {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .congratulations__heading {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: $md) {
+  .congratulations {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  .congratulations__heading {
+    margin-bottom: 60px;
+  }
+
+  .congratulations__images {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  .congratulations__image-link {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: $sm) {
+  .congratulations {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .congratulations__heading {
+    margin-bottom: 50px;
+  }
+
+  .congratulations__images {
+    flex-wrap: wrap;
+  }
+
+  .congratulations__image-link {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $xs) {
+  .congratulations {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .congratulations__heading {
+    margin-bottom: 40px;
+  }
+
+  .congratulations__image-link {
+    margin-bottom: 10px;
+  }
+}

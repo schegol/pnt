@@ -1,0 +1,52 @@
+.expandable {
+  position: relative;
+
+  &::after {
+    @include transition(opacity);
+    @include abs-center;
+    width: 104px;
+    height: 104px;
+    background-color: $main-color-dark;
+    background-image: url("../img/icon-magnifier.svg");
+    background-position: center;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.expandable__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: $lg) {
+  .expandable {
+    &::after {
+      width: 90px;
+      height: 90px;
+      background-size: 25px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .expandable {
+    &::after {
+      width: 65px;
+      height: 65px;
+      background-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.parallax-section__img {
+  height: 120vh;
+}
+
+@media (max-width: $sm) {
+  .parallax-section__img {
+    height: 500px;
+  }
+}
+
+@media (max-width: $xs) {
+  .parallax-section__img {
+    height: 300px;
+  }
+}

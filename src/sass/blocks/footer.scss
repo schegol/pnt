@@ -1,0 +1,113 @@
+.footer {
+  padding-top: 118px;
+  padding-bottom: 117px;
+  background-color: #000;
+}
+
+.footer__heading {
+  @include reset;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.footer__links {
+  @include dflex(wrap, row, space-between, center);
+  width: 440px;
+  margin: 0 auto;
+}
+
+.footer__link {
+  @include transition(background-color);
+  @include dflex(nowrap, row, center, center);
+  width: 90px;
+  height: 90px;
+  background-color: #000;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    outline: none;
+  }
+
+  & path {
+    @include transition(fill);
+    fill: #fff;
+  }
+}
+
+.footer__link:hover path,
+.footer__link:focus path {
+  fill: #000;
+}
+
+@media (max-width: $lg) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer__heading {
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: $md) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer__heading {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+
+  .footer__links {
+    width: 350px;
+  }
+
+  .footer__link {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: $sm) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer__heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: $xs) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer__heading {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  .footer__links {
+    width: 250px;
+  }
+
+  .footer__link {
+    width: 50px;
+    height: 50px;
+  }
+}

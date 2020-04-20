@@ -1,0 +1,235 @@
+.photo-contest {
+  padding-top: 112px;
+  padding-bottom: 122px;
+  background-color: $main-color-dark;
+}
+
+.photo-contest__head {
+  @include dflex(nowrap, row, space-between, center);
+  margin-bottom: 73px;
+}
+
+.photo-contest__heading {
+  color: #fff;
+}
+
+.photo-contest__link-all {
+  @include dflex(nowrap, row, flex-end, center);
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    margin-left: 25px;
+    background-image: url("../img/icon-pic.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.photo-contest__link-all-text {
+  position: relative;
+
+  &::after {
+    @include transition(opacity);
+    @include abs-pseudo;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0;
+  }
+}
+
+.photo-contest__link-all:hover .photo-contest__link-all-text::after,
+.photo-contest__link-all:focus .photo-contest__link-all-text::after {
+  opacity: 1;
+}
+
+.photo-contest__items {
+  @include dflex(nowrap, row, flex-start, flex-start);
+  min-width: 100%;
+  margin-right: -10px;
+  margin-bottom: 135px;
+  margin-left: -10px;
+}
+
+.photo-contest__item {
+  flex-basis: 33.3333%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.photo-contest__image-link {
+  display: block;
+  margin-bottom: 34px;
+}
+
+.photo-contest__item-likes {
+  // @include dflex(nowrap, row, flex-start, center);
+  @include transition();
+  display: inline-block;
+  margin-bottom: 26px;
+  color: #fff;
+  font-size: 16px;
+
+  &::before {
+    @include transition();
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    margin-right: 7px;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    margin-bottom: 24px;
+    font-size: 18px;
+
+    &::before {
+      width: 21px;
+      height: 18px;
+    }
+  }
+
+  &--active {
+    &::before {
+      background-image: url("../img/icon-heart-active.svg");
+    }
+  }
+}
+
+.photo-contest__item-description {
+  @include reset;
+  font-size: 18px;
+  color: #fff;
+}
+
+.photo-contest__rules-link {
+  @include transition();
+  @include dflex(nowrap, row, center, center);
+  width: 276px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 18px;
+  color: #fff;
+  background-color: $main-color-dark;
+  border: 1px solid #fff;
+
+  &:hover,
+  &:focus {
+    color: $main-color-dark;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: $lg) {
+  .photo-contest {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .photo-contest__head {
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width: $md) {
+  .photo-contest {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  .photo-contest__head {
+    margin-bottom: 50px;
+  }
+
+  .photo-contest__link-all {
+    font-size: 16px;
+  }
+
+  .photo-contest__items {
+    margin-bottom: 100px;
+  }
+
+  .photo-contest__item-description {
+    font-size: 16px;
+  }
+
+  .photo-contest__rules-link {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $sm) {
+  .photo-contest {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .photo-contest__head {
+    margin-bottom: 40px;
+  }
+
+  .photo-contest__items {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: $xs) {
+  .photo-contest {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .photo-contest__head {
+    margin-bottom: 30px;
+  }
+
+  .photo-contest__items {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+
+  .photo-contest__item {
+    flex-basis: auto;
+    width: 100%;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .photo-contest__image-link {
+    margin-bottom: 15px;
+  }
+
+  .photo-contest__item-likes {
+    margin-bottom: 15px;
+
+    &:hover,
+    &:focus {
+      margin-bottom: 13px;
+    }
+  }
+}
