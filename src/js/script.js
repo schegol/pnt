@@ -94,10 +94,11 @@ $(document).ready(function() {
 
   yearToggles.each(function () {
     if ($(window).width() >= 768) {
-      $(this).click(function () {
+      $(this).click(function (e) {
         let circleOffset = $(this).offset();
         let posY = circleOffset.left;
 
+        e.preventDefault();
         yearToggles.removeClass('timeline__item--active');
         yearToggles.children('.timeline__btn').removeClass('circleOut');
         $(this).addClass('timeline__item--active');
