@@ -9,6 +9,16 @@
   // background-attachment: fixed;
 }
 
+.header__bg-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .header__logo-block {
   padding-top: 60px;
 }
@@ -46,12 +56,14 @@
   font-size: 250px;
   line-height: 1;
   font-weight: bold;
+  opacity: 0;
 }
 
 .header__slogan-small {
   font-size: 55px;
   line-height: 1;
   font-weight: 400;
+  opacity: 0;
 }
 
 @media (max-width: $lg) {
