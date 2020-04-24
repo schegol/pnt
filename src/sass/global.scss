@@ -43,3 +43,11 @@ a {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+@media (max-width: $sm) {
+  .wow{
+    opacity: 1 !important;
+    animation-name: none !important;
+    visibility: visible !important;
+  }
+}
