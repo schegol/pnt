@@ -1,0 +1,46 @@
+.contest-page__heading {
+  @include reset;
+  margin-bottom: 40px;
+}
+
+.ug-lightbox .ug-lightbox-arrow-left {
+  background-image: url("../img/lightbox-arrow-left.png");
+}
+
+.ug-lightbox .ug-lightbox-arrow-right {
+  background-image: url("../img/lightbox-arrow-right.png");
+}
+
+.ug-lightbox .ug-lightbox-button-close {
+  background-image: url("../img/lightbox-icon-close.png");
+}
+
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-zoom {
+    background-image: url("../img/icon-zoom32.png");
+}
+
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-link,
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-link:hover,
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-link:focus {
+  padding-top: 35px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  background-image: url("../img/icon-heart.svg");
+  background-position: center top 5px;
+  background-size: 32px;
+  background-repeat: no-repeat;
+}
+
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-link {
+  opacity: .7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-link.active {
+  background-image: url("../img/icon-heart-active.svg");
+}
