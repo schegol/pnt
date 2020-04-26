@@ -6,7 +6,7 @@
     @include abs-center;
     width: 104px;
     height: 104px;
-    background-color: $main-color-dark;
+    background-color: rgba($main-color-dark,.7);
     background-image: url("../img/icon-magnifier.svg");
     background-position: center;
     background-size: 32px;
@@ -18,7 +18,7 @@
   &:hover,
   &:focus {
     outline: none;
-    
+
     &::after {
       opacity: 1;
     }

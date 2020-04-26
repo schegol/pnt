@@ -3,6 +3,25 @@
   margin-bottom: 40px;
 }
 
+.contest-page__items-wrapper {
+  margin-bottom: 48px;
+}
+
+.contest-page__back-link {
+	color: #007ece;
+  font-size: 12px;
+	text-decoration: none;
+  text-transform: uppercase;
+	transition: color 0.1s, border-color 0.1s, background-color 0.1s;
+	outline: none;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
 .ug-lightbox .ug-lightbox-arrow-left {
   background-image: url("../img/lightbox-arrow-left.png");
 }
@@ -16,7 +35,20 @@
 }
 
 .ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-zoom {
-    background-image: url("../img/icon-zoom32.png");
+  background-image: url("../img/icon-zoom32.png");
+}
+
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-zoom {
+  background-image: url("../img/icon-magnifier.svg");
+  background-position: center;
+  background-size: 28px;
+  background-repeat: no-repeat;
+  opacity: .7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-link,
