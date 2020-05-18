@@ -10,6 +10,7 @@
 }
 
 .photo-contest__heading {
+  padding-right: 20px;
   color: #fff;
 }
 
@@ -55,6 +56,29 @@
 .photo-contest__link-all:hover .photo-contest__link-all-text::after,
 .photo-contest__link-all:focus .photo-contest__link-all-text::after {
   opacity: 1;
+}
+
+.photo-contest__section-description {
+  margin-bottom: 65px;
+}
+
+.photo-contest__section-description p {
+  @include reset;
+  color: #fff;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.photo-contest__section-description a {
+  color: #fff;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .photo-contest__items {
@@ -165,6 +189,20 @@
 
   .photo-contest__link-all {
     font-size: 16px;
+
+    &::after {
+      margin-left: 15px;
+    }
+  }
+
+  .photo-contest__section-description {
+    margin-bottom: 50px;
+  }
+
+  .photo-contest__section-description p {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 
   .photo-contest__items {
@@ -189,6 +227,18 @@
 
   .photo-contest__head {
     margin-bottom: 40px;
+  }
+
+  .photo-contest__section-description {
+    margin-bottom: 40px;
+  }
+
+  .photo-contest__section-description p {
+    font-size: 14px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
   .photo-contest__items {
@@ -216,6 +266,10 @@
   }
 
   .photo-contest__head {
+    margin-bottom: 30px;
+  }
+
+  .photo-contest__section-description {
     margin-bottom: 30px;
   }
 

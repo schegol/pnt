@@ -60,6 +60,13 @@
   opacity: 0;
 }
 
+.header__stretched-letter {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  transform: scaleY(1.15);
+}
+
 .header__slogan-small {
   font-size: 55px;
   line-height: 1;
@@ -76,6 +83,10 @@
     font-size: 200px;
   }
 
+  .header__stretched-letter {
+    top: 15px;
+  }
+
   .header__slogan-small {
     font-size: 44px;
   }
@@ -88,6 +99,10 @@
 
   .header__slogan-big {
     font-size: 120px;
+  }
+
+  .header__stretched-letter {
+    top: 9px;
   }
 
   .header__slogan-small {
@@ -104,6 +119,10 @@
     font-size: 100px;
   }
 
+  .header__stretched-letter {
+    top: 7px;
+  }
+
   .header__slogan-small {
     font-size: 22px;
   }
@@ -116,6 +135,10 @@
 
   .header__slogan-big {
     font-size: 75px;
+  }
+
+  .header__stretched-letter {
+    top: 5px;
   }
 
   .header__slogan-small {

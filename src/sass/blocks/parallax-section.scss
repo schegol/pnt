@@ -1,14 +1,39 @@
+.parallax-section {
+
+}
+
+.parallax-section__heading {
+  @include reset;
+  padding: 100px 20px 85px;
+  text-align: center;
+  background-color: $main-color-light;
+}
+
 .parallax-section__img {
   height: 120vh;
 }
 
+@media (max-width: $md) {
+  .parallax-section__heading {
+    padding: 70px 15px 60px;
+  }
+}
+
 @media (max-width: $sm) {
+  .parallax-section__heading {
+    padding: 60px 15px 50px;
+  }
+
   .parallax-section__img {
     height: 500px;
   }
 }
 
 @media (max-width: $xs) {
+  .parallax-section__heading {
+    padding: 50px 10px 40px;
+  }
+
   .parallax-section__img {
     height: 300px;
   }
